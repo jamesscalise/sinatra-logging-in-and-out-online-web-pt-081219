@@ -20,6 +20,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
+    binding.pry
     if !session[:user_id]
         erb :error
     else
