@@ -5,6 +5,7 @@ class Helpers
   end
   
   def self.is_logged_in?(session)
+    binding.pry
     user = User.find(session[:user_id])
     if user
       true
