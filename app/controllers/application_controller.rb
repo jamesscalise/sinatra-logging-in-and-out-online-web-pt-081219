@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    
+    if Helper.
   end
 
   get '/logout' do
